@@ -15,9 +15,8 @@ const Right: React.FC = () => {
             className='link text-xl cursor-pointer size-8'
           />
         </a>
-        {/* TODO: link linkedin */}
         <a
-          href='https://www.linkedin.com/in/mohammad-reza-mousavi-niya-442879167/'
+          href='https://www.linkedin.com/in/mahyar-mousavinia/'
           target='_blank'
           rel='noopener noreferrer'
         >

@@ -1,7 +1,7 @@
 import React from 'react';
 // TODO: image haro inja add kon az file asset /src/asset/images
-import headerBg from '@images/header-bg.webp';
-import imgMRM from '@images/Mahyar.jpg';
+import headerBg from '@images/backpage.jpg';
+import imgMRM from '@images/MahyarM.jpg';
 
 import { FaUniversity, FaMapMarked } from 'react-icons/fa';
 const Header: React.FC = () => {
@@ -78,25 +78,10 @@ const Header: React.FC = () => {
                   <div className='flex flex-wrap justify-center'>
                     <div className='w-full lg:w-9/12 px-4'>
                       <p className='mb-4 text-lg leading-relaxed text-gray-800 text-justify'>
-                        Experienced and results-driven full-stack and blockchain
-                        developer with a strong background in the Business
-                        Administration, and blockchain industries. With over{' '}
-                        <b>5 years</b> of hands-on experience, I have a proven
-                        track record of designing and delivering robust software
-                        solutions that meet the unique challenges of these
-                        dynamic sectors.
+                      I am a <b>data-driven individual</b> with a solid foundation in <b>statistics</b> and <b>fuzzy logic</b>, complemented by hands-on experience in <b>Python programming</b>. My proficiency extends to working with statistical software such as <b>SPSS</b> and <b>Minitab</b>, allowing me to perform detailed analyses across various fields. I am adept at applying these tools to solve complex problems and deliver actionable insights through data interpretation.
                       </p>
                       <p className='mb-4 text-lg leading-relaxed text-gray-800 text-justify'>
-                        My expertise lies in leveraging C#, Python, and{' '}
-                        <b>JavaScript </b> (specially <b>TypeScript</b>)
-                        extensive libraries and frameworks to develop scalable
-                        and efficient applications. Staying at the forefront of
-                        emerging technologies is a priority for me. I am
-                        committed to continuously improving development
-                        practices and driving exceptional performance. My
-                        passion for the Business Administration and blockchain
-                        domains fuels my dedication to delivering impactful
-                        solutions.
+                      I am also deeply passionate about <b>Artificial Intelligence (AI)</b>, <b>Machine Learning</b>, and <b>Deep Learning</b>. I continuously seek opportunities to enhance my skills in these areas, staying up-to-date with the latest advancements and <b>eager to gain more experience</b> in the field. My motivation lies in integrating cutting-edge technologies to drive innovation and tackle real-world challenges.
                       </p>
                     </div>
                   </div>
