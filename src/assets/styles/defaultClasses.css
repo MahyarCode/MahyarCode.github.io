@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Home css */
+.link {
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.link:hover {
+  color: var(--color-primary);
+}
+.link.dark:hover {
+  color: white;
+}
+
+.sidebar__link {
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-weight: 500;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  white-space: nowrap;
+}
+.sidebar__link:hover {
+  color: #3b82f6;
+}
+.sidebar__link.dark:hover {
+  color: white;
+}
+
+.sidebar {
+  background-color: white;
+  color: black;
+  position: fixed;
+  z-index: 100;
+  height: 100%;
+  width: 240px;
+  transform: translateX(-100%);
+  padding-left: 1.25rem; /* Equivalent to 5px */
+  padding-right: 1.25rem; /* Equivalent to 5px */
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  transition-duration: 0.2s;
+}
+.sidebar.dark {
+  background-color: var(--color-darkSecondary);
+  color: white;
+  transform: translateX(0);
+}
+
+.darkOrLight {
+  background-color: white;
+  color: var(--color-primary);
+}
+.darkOrLight.dark {
+  background-color: var(--color-darkPrimary);
+  color: white;
+}
+
+.ul__hover_dropdown {
+  position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border-radius: 0.375rem; /* Equivalent to rounded-md */
+  top: 3.5rem; /* Equivalent to 14px */
+  left: -0.5rem; /* Equivalent to -2px */
+  opacity: 0;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.ul__hover_dropdown.dark {
+  background-color: var(--color-darkPrimary);
+}
+
+.btn {
+  border-radius: 0.375rem; /* Equivalent to rounded-lg */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.75rem; /* Equivalent to text-xs */
+  font-weight: 500;
+  color: #3b82f6;
+  transition-duration: 0.2s;
+}
+.btn:hover {
+  transform: translateY(-0.5rem);
+}
+.btn:active {
+  transform: translateY(0);
+}
+.btn.dark {
+  background-color: white;
+  color: var(--color-darkSecondary);
+  font-size: 0.75rem; /* Equivalent to text-xs */
+}
+.btn.dark:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(1rem);
+}
+
+.btn__primary {
+  background-color: #1a5cff;
+  color: white;
+  font-size: 0.75rem; /* Equivalent to text-xs */
+  transition-duration: 0.2s;
+}
+.btn__primary:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1rem);
+}
+
+.square__card {
+  padding-top: 1.75rem; /* Equivalent to 7px */
+  padding-bottom: 1.75rem; /* Equivalent to 7px */
+  padding-left: 2rem; /* Equivalent to 8px */
+  padding-right: 2rem; /* Equivalent to 8px */
+  border-radius: 1.125rem; /* Equivalent to rounded-3xl */
+  width: 120px;
+  height: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.square__card:hover {
+  transform: translateY(2px);
+}
+
+.heading {
+  font-size: 1.2rem; /* Equivalent to text-[1.2rem] */
+  font-weight: 600; /* Equivalent to font-semibold */
+  color: var(--color-primary);
+}
+.heading.dark {
+  color: white;
+}
+
+.paragraph {
+  font-size: 0.75rem; /* Equivalent to text-xs */
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.paragraph.dark {
+  color: white;
+}
+
+.ripple_bg_gray_300 {
+  background-color: #e2e8f0;
+}
+
+.dropdown__ul {
+  display: flex;
+  margin-top: 0.25rem; /* Equivalent to my-1 */
+  margin-bottom: 0.25rem; /* Equivalent to my-1 */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem; /* Equivalent to p-2 */
+  border-radius: 0.375rem; /* Equivalent to rounded-xl */
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+}
+
+.breadcrumbs__div {
+  position: sticky;
+  z-index: 30;
+  top: 2.4rem; /* Equivalent to 9.6px */
+  margin-top: 3.5rem; /* Equivalent to md:top-[3.5rem] */
+  background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
+  transition-duration: 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.breadcrumbs__div.dark {
+  background-color: #141417; /* Equivalent to dark:bg-[#141417] */
+}
+
+i {
+  color: #ef4444; /* Equivalent to text-rose-500 */
+}
+
+.animation1 {
+  animation: animation1 infinite 3s linear;
+}
+
+@keyframes animation1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animation2 {
+  animation: animation2 infinite 4s linear;
+}
+
+@keyframes animation2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  transform: rotate(45deg);
+  animation: none; /* Disable the animation by default */
+  transition: opacity 0.3s ease-in-out; /* Add a transition for smooth effect */
+}
+
+.btn-shine:hover::before {
+  animation: shine 1.5s infinite; /* Enable the animation on hover */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-150%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(150%) rotate(45deg);
+  }
+}
